@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="main-header" data-test="header">
       <a class="main-header__logo" href="index.html" aria-current="page">
-        <img class="main-header__logo-image" width="140px" height="70px" src="./images/svg/logo-sedona.svg" alt="Логотип сайта города Седона.">
+        <img class="main-header__logo-image" width="140px" height="70px" src="./images/svg/logo-sedona.svg"
+          alt="Логотип сайта города Седона.">
       </a>
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
@@ -21,28 +25,30 @@
             <a class="navigation__link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-      </nav>
-      <ul class="main-header__user-list user-menu">
+        </nav>
+      <ul class="main-header__user-menu user-menu">
         <li class="user-menu__item">
-          <a href="" class="user-menu__link">
+          <a href="#" class="user-menu__link">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="user-menu__item">
-          <a href="" class="user-menu__link">
+          <a href="#" class="user-menu__link">
             <span class="visually-hidden">Отелей в избранном:</span>
             <span class="user-menu__count-favorite">12</span>
           </a>
         </li>
       </ul>
       <a class="main-header__button-link button button--bg-brown" href="#">Хочу сюда!</a>
+
     </header>
 
     <main class="page-main" data-test="main">
 
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Сайт города Седона</h1>
-        <img class="hero__hero-img" width="458px" height="352px" src="./images/svg/hero-welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+        <img class="hero__hero-img" src="./images/svg/hero-welcome.svg" width="458px" height="352px"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
 
       <section class="advantages" data-test="advantages">
@@ -55,7 +61,8 @@
           <li class="advantages__item advantages__item--wide">
             <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages__photo" width="800px" height="385px" src="./images/sedona-city.jpg" alt="Красивый городок Седона">
+            <img class="advantages__photo" src="./images/sedona-city.jpg" width="800px" height="385px"
+              alt="Красивый городок Седона">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>
@@ -70,8 +77,9 @@
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages__item advantages__item--wide">
+            <img class="advantages__photo" src="./images/bridge-of-devil.jpg" width="800px" height="385px"
+            alt="Опасный, но красивейший мост дьявола">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <img class="advantages__photo" width="800px" height="385px" src="./images/bridge-of-devil.jpg" alt="Опасный, но красивейший мост дьявола">
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
@@ -109,12 +117,12 @@
 
       <section class="subscription subscription--with-background" data-test="subscribe">
         <h2 class="subscription__section-head section-head section-head--color-white">Подпишитесь на рассылку</h2>
-        <p class="subscription__section-description section-description section-description--c-white">Только полезная
+        <p class="subscription__section-description section-description section-description--color-white">Только полезная
           информация и никакого спама, честное
           бойскаутское!</p>
         <form class="subscription__subscribe-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-email">Введите ваш email:</label>
-          <input class="subscribe-form__field-email" type="email" placeholder="Ваш email" name="subscribe-form-email"
+          <input class="subscribe-form__input" type="email" placeholder="Ваш email" name="subscribe-form-email"
             id="subscribe-form-email" required>
           <button class="subscribe-form__button button button--bg-blue" type="submit">Подписаться</button>
         </form>
@@ -142,8 +150,10 @@
       </ul>
       <a class="main-footer__contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="main-footer__copyright-logo" width="115px" height="33px" src="./images/svg/logo-htmlacademy.svg" alt="Логотип HTML академии.">
+        <img class="main-footer__copyright-logo" src="./images/svg/logo-htmlacademy.svg" width="115px" height="33px"
+          alt="Логотип HTML академии.">
       </a>
     </footer>
   </body>
+
 </html>

@@ -4,12 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="main-header" data-test="header">
       <a class="main-header__logo" href="index.html" aria-current="page">
-        <img class="main-header__logo-image" width="140px" height="70px" src="./images/svg/logo-sedona.svg"
+        <img class="main-header__logo-image" src="./images/svg/logo-sedona.svg" width="140px" height="70px"
           alt="Логотип сайта города Седона.">
       </a>
       <nav class="main-header__navigation navigation">
@@ -42,9 +43,8 @@
     </header>
 
     <main class="page-main">
-      <h1 class="catalog-title">Гостиницы Седоны</h1>
       <section class="catalog-filters">
-        <h2 class="visually-hidden">Фильтры для поиска подходящей гостиницы</h2>
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ol class="catalog-filters__breadcrumbs breadcrumbs">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="index.html">
@@ -80,12 +80,12 @@
           </fieldset>
           <fieldset class="search-form__fieldset">
             <legend class="search-form__legend">Стоимость, &#8381;</legend>
-            <label class="visually-hidden" for="min-price">От
-              <input class="search-form__input-price-min" type="number" min="0" max="9000" name="min-price"
+            <label for="min-price">От
+              <input class="search-form__input search-form__input--price-min" type="number" min="0" max="9000" name="min-price"
                 id="min-price" value="0">
             </label>
-            <label class="visually-hidden" for="max-price">До
-              <input class="search-form__input-price-max" type="number" min="1" max="9000" name="max-price"
+            <label for="max-price">До
+              <input class="search-form__input search-form__input--price-max" type="number" min="1" max="9000" name="max-price"
                 id="max-price" value="9000">
             </label>
           </fieldset>
@@ -99,7 +99,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <div class="catalog__sort-container">
-          <p>Найдено гостииниц:
+          <p class="catalog_result">Найдено гостиниц:
             <span class="catalog__result-count">38</span>
           </p>
           <select class="catalog__sort-select" aria-label="Сортировка">
@@ -128,7 +128,7 @@
         <ul class="catalog__hotel-list">
           <li class="catalog__hotel-item hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__photo" width="300px" height="212px" src="./images/hotel-1.jpg"
+              <img class="hotel-card__photo" src="./images/hotel-1.jpg" width="300px" height="212px"
                 alt="Гостиница Amara Resort & Spa.">
               <h3 class="hotel-card__title">Amara Resort & Spa</h3>
             </a>
@@ -145,7 +145,7 @@
           </li>
           <li class="catalog__hotel-item hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__photo" width="300px" height="212px" src="./images/hotel-2.jpg"
+              <img class="hotel-card__photo" src="./images/hotel-2.jpg" width="300px" height="212px"
                 alt="Гостиница Villas at Poco Diablo.">
               <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
             </a>
@@ -162,7 +162,7 @@
           </li>
           <li class="catalog__hotel-item hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__photo" width="300px" height="212px" src="./images/hotel-3.jpg"
+              <img class="hotel-card__photo" src="./images/hotel-3.jpg" width="300px" height="212px"
                 alt="Гостиница Desert Quail Inn.">
               <h3 class="hotel-card__title">Desert Quail Inn</h3>
             </a>
@@ -179,7 +179,7 @@
           </li>
           <li class="catalog__hotel-item hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__photo" width="300px" height="212px" src="./images/hotel-4.jpg"
+              <img class="hotel-card__photo" src="./images/hotel-4.jpg" width="300px" height="212px"
                 alt="Гостиница GreenTree Inn.">
               <h3 class="hotel-card__title">GreenTree Inn</h3>
             </a>
@@ -224,7 +224,7 @@
           бойскаутское!</p>
         <form class="subscription__subscribe-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-email">Введите ваш email:</label>
-          <input class="subscribe-form__field-email" type="email" placeholder="Ваш email" name="subscribe-form-email"
+          <input class="subscribe-form__input" type="email" placeholder="Ваш email" name="subscribe-form-email"
             id="subscribe-form-email" required>
           <button class="subscribe-form__button button button--bg-blue" type="submit">Подписаться</button>
         </form>
@@ -252,7 +252,7 @@
       </ul>
       <a class="main-footer__contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="main-footer__copyright-logo" width="115px" height="33px" src="./images/svg/logo-htmlacademy.svg"
+        <img class="main-footer__copyright-logo" src="./images/svg/logo-htmlacademy.svg" width="115px" height="33px"
           alt="Логотип HTML академии.">
       </a>
     </footer>
