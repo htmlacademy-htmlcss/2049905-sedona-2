@@ -131,6 +131,11 @@ img {
 
 /* FOOTER */
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social {
   list-style: none;
 }
@@ -222,11 +227,6 @@ img {
 .section-head--color-white {
 
   color: #ffffff;
-}
-
-.subscribe-form {
-  display: flex;
-  justify-content: center;
 }
 
 .subscribe-form__input {
