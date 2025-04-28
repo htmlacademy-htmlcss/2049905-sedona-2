@@ -150,10 +150,12 @@ img {
 /* INDEX */
 
 .hero {
-  background: url("../images/svg/background-mask.svg") 0 428px no-repeat,
+  background: url("../images/svg/background-mask.svg") 0 432px no-repeat,
     url("../images/background-hero.jpg") no-repeat,
     rgba(131, 179, 211, 0.20);
   text-align: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .section-head {
@@ -175,12 +177,41 @@ img {
 
 .advantages__list {
   list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 102px 85px;
 }
 
 .advantages__item--wide {
   width: 1200px;
   background-color: #82B3D3;
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.advantages__item:nth-child(even):not(.advantages__item--wide){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages__item:nth-child(odd):not(.advantages__item--wide) {
+  background-color: rgba(131, 179, 211, 0.20);
+}
+.advantages__wrapper-item {
+  padding: 102px 85px;
+}
+
+.advantages__photo {
+  display: block;
 }
 
 .advantages__title {
@@ -189,6 +220,11 @@ img {
   font-weight: 700;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+}
+
+.advantages__description {
+  margin: 0;
 }
 
 .advantages__item--wide .advantages__title {
@@ -201,6 +237,8 @@ img {
 
 .services__list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services__title {
@@ -215,8 +253,14 @@ img {
   text-align: center;
 }
 
+.search__button-modal {
+  margin: 0 auto;
+}
+
 .subscription {
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription--with-background {
@@ -229,8 +273,21 @@ img {
   color: #ffffff;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
 .subscribe-form__input {
   background-color: #F2F2F2;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.subscribe-form__button {
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
 }
 
 .button--bg-blue {
@@ -286,6 +343,7 @@ img {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: #000000;
 }
 
 .switch {
