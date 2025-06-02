@@ -207,6 +207,15 @@ img {
   max-width: 400px;
 }
 
+.main-footer__copyright-link {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__copyright-link-icon {
+  fill: #000000;
+}
+
 /* INDEX */
 
 .hero {
@@ -520,10 +529,26 @@ img {
 
 .breadcrumbs__item {
   position: relative;
+  margin-right: 28px;
+}
+
+.breadcrumbs__link--icon-house {
+  display: inline-block;
+  background-image: url(../images/svg/breadcrumbs-home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
 }
 
 .breadcrumbs__item:not(:first-child)::before{
-  content: ">";
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 21px;
+  display: inline-block;
+  left: -19px;
+  background: url(../images/svg/breadcrumbs-separator.svg) no-repeat center;
 }
 
 .catalog-filters__breadcrumbs {
@@ -532,7 +557,14 @@ img {
 
 .search-form {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+}
+
+.search-form__fieldset-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .search-form__fieldset {
@@ -541,6 +573,11 @@ img {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  margin-right: 70px;
+}
+
+.search-form__fieldset:nth-child(2) {
+  margin-right: auto;
 }
 
 .search-form__legend {
@@ -566,10 +603,92 @@ img {
   font-size: 18px;
 }
 
+.range__input--left-border {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.range__input--right-border {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.range__wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 44px;
+}
+
+.range__label {
+  position: relative;
+  display: inline-block;
+  width: 143px;
+  height: 48px;
+}
+
+.range__pretext {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-family: inherit;
+  border: none;
+  background-color: #f2f2f2;
+  appearance: none;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range__scale {
+  position: relative;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.range__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.range__toggle--min {
+  top: -8px;
+  left: -10px;
+}
+
+.range__toggle--max {
+  top: -8px;
+  right: -10px;
+}
+
 .search-form__buttons {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  padding-top: 56px;
   gap: 32px;
 }
 
@@ -588,7 +707,6 @@ img {
 
 .catalog__sort-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -600,6 +718,7 @@ img {
   line-height: 36px;
   color: #000000;
   margin: 0;
+  margin-right: auto;
 }
 
 .catalog__sort-select {
@@ -613,12 +732,13 @@ img {
   line-height: 21px;
   appearance: none;
   padding: 12px 40px 12px 20px;
+  margin-right: 70px;
 }
 
 .switch {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 8px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -630,6 +750,20 @@ img {
   height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.switch__link--tile {
+  background-image: url(../images/svg/view-tile.svg);
+}
+
+.switch__link--cards {
+  background-image: url(../images/svg/view-cards.svg);
+}
+
+.switch__link--list {
+  background-image: url(../images/svg/view-list.svg);
 }
 
 .switch__link--current {
@@ -658,9 +792,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  min-height: 438px;
   gap: 16px 20px;
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   align-items: start;
   justify-self: start;
   word-break: break-all;
@@ -672,7 +807,7 @@ img {
 }
 
 .hotel-card__photo {
-  margin-bottom: 16px;
+  margin-bottom:13px;
 }
 
 .hotel-card__title {
@@ -701,7 +836,6 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  min-height: 37px;
 }
 
 .hotel-card__button-favorite {
@@ -710,12 +844,11 @@ img {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  min-height: 37px;
 }
 
 .hotel-card__stars {
   width: 106px;
-  min-height: 18px;
+  min-height: 17px;
   align-self: center;
   background-image: url("../images/svg/star.svg");
   background-repeat: space;
