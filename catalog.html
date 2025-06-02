@@ -38,7 +38,7 @@
                 <path
                   d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z" />
               </svg>
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск отелей в Седоне</span>
             </a>
           </li>
           <li class="user-menu__item">
@@ -74,35 +74,47 @@
               <fieldset class="search-form__fieldset">
                 <legend class="search-form__legend">Инфраструктура:</legend>
                 <label class="search-form__label" for="infrastructure-pool">
-                  <input class="search-form__checkbox" type="checkbox" name="infrastructure-pool"
-                    id="infrastructure-pool" checked>Бассейн
+                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="infrastructure-pool"
+                    id="infrastructure-pool" checked>
+                  <span class="search-form__checkmark"></span>
+                  <span class="search-form__text">Бассейн</span>
                 </label>
                 <label class="search-form__label" for="infrastructure-parking-lot">
-                  <input class="search-form__checkbox" type="checkbox" name="infrastructure-parking-lot"
-                    id="infrastructure-parking-lot" checked>Парковка
+                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="infrastructure-parking-lot"
+                    id="infrastructure-parking-lot" checked>
+                  <span class="search-form__checkmark"></span>
+                  <span class="search-form__text">Парковка</span>
                 </label>
                 <label class="search-form__label" for="infrastructure-wi-fi">
-                  <input class="search-form__checkbox" type="checkbox" name="infrastructure-wi-fi"
-                    id="infrastructure-wi-fi">Wi-fi
+                  <input class="search-form__checkbox visually-hidden" type="checkbox" name="infrastructure-wi-fi"
+                    id="infrastructure-wi-fi">
+                  <span class="search-form__checkmark"></span>
+                  <span class="search-form__text">Wi-Fi</span>
                 </label>
               </fieldset>
               <fieldset class="search-form__fieldset">
                 <legend class="search-form__legend">Тип Жилья:</legend>
                 <label class="search-form__label" for="type-house-hotel">
-                  <input class="search-form__radio" type="radio" name="type-house" id="type-house-hotel" value="hotel"
-                    checked>Гостиница
+                  <input class="search-form__radio visually-hidden" type="radio" name="type-house" id="type-house-hotel"
+                    value="hotel" checked>
+                  <span class="search-form__checkmark"></span>
+                    Гостиница
                 </label>
                 <label class="search-form__label" for="type-house-motel">
-                  <input class="search-form__radio" type="radio" name="type-house" id="type-house-motel"
-                    value="motel">Мотель
+                  <input class="search-form__radio visually-hidden" type="radio" name="type-house" id="type-house-motel"
+                    value="motel">
+                  <span class="search-form__checkmark"></span>
+                    Мотель
                 </label>
                 <label class="search-form__label" for="type-house-appartments">
-                  <input class="search-form__radio" type="radio" name="type-house" id="type-house-appartments"
-                    value="appartments">Апартаменты
+                  <input class="search-form__radio visually-hidden" type="radio" name="type-house"
+                    id="type-house-appartments" value="appartments">
+                  <span class="search-form__checkmark"></span>
+                    Апартаменты
                 </label>
               </fieldset>
               <fieldset class="search-form__fieldset">
-                <legend class="search-form__legend">Стоимость, &#8381;</legend>
+                <legend class="search-form__legend">Стоимость, &#8381;:</legend>
                 <div class="search-form__range range">
                   <div class="range__wrapper-inputs">
                     <label class="range__label">
@@ -111,7 +123,8 @@
                     </label>
                     <label class="range__label">
                       <span class="range__pretext">до</span>
-                      <input class="range__input range__input--right-border" type="number" value="9000" name="max-price">
+                      <input class="range__input range__input--right-border" type="number" value="9000"
+                        name="max-price">
                     </label>
                   </div>
                   <div class="range__scale">
@@ -139,11 +152,13 @@
             <p class="catalog_result">Найдено гостиниц:
               <span class="catalog__result-count">38</span>
             </p>
+            <div class="catalog__custom-sort-select">
             <select class="catalog__sort-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
+          </div>
             <ul class="catalog__switch-list switch">
               <li class="switch__item">
                 <a class="switch__link switch__link--tile switch__link--current" href="catalog.html?view=tile">
@@ -261,7 +276,7 @@
             бойскаутское!</p>
           <form class="subscription__subscribe-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-form-email">Введите ваш email:</label>
-            <input class="subscribe-form__input" type="email" placeholder="Ваш email" name="subscribe-form-email"
+            <input class="subscribe-form__input" type="email" placeholder="Ваш e-mail" name="subscribe-form-email"
               id="subscribe-form-email" required>
             <button class="subscribe-form__button button button--bg-blue" type="submit">Подписаться</button>
           </form>
@@ -304,7 +319,7 @@
         </ul>
         <a class="main-footer__contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="main-footer__copyright-link-icon" width="115" height="33" viewBox="0 0 115 33" fill="none"
+          <svg class="main-footer__copyright-link-icon" width="115" height="33" viewBox="0 0 115 33" aria-label="Логотип Html Академии." fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
             <path
