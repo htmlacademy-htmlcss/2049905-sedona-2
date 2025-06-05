@@ -14,7 +14,7 @@
     <div class="page-container">
       <header class="main-header" data-test="header">
         <a class="main-header__logo" href="index.html" aria-current="page">
-          <img class="main-header__logo-image" width="140px" height="70px" src="./images/svg/logo-sedona.svg"
+          <img class="main-header__logo-image" width="140" height="70" src="./images/svg/logo-sedona.svg"
             alt="Логотип сайта города Седона.">
         </a>
         <nav class="main-header__navigation navigation">
@@ -34,7 +34,7 @@
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">
               <svg class="user-menu__link-icon" aria-hidden="true" focusable="false" width="20" height="20"
-                viewBox="0 0 20 20">fill="none" xmlns="http://www.w3.org/2000/svg">
+                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z" />
               </svg>
@@ -92,7 +92,7 @@
               <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages__item advantages__item--wide">
-              <img class="advantages__photo" src="./images/bridge-of-devil.jpg" width="800px" height="385px"
+              <img class="advantages__photo" src="./images/bridge-of-devil.jpg" width="800" height="385"
                 alt="Опасный, но красивейший мост дьявола.">
               <div class="advantages__wrapper-item">
                 <h3 class="advantages__title">Там есть <br> мост дьявола</h3>
@@ -130,7 +130,7 @@
             покажем
             вам лучшие предложения гостиниц
             в Седоне</p>
-          <button class="search__button-modal button button--bg-brown" type="button" id="openModalBtn">Поиск гостиницы в
+          <button class="search__button-modal button button--bg-brown" type="button">Поиск гостиницы в
             Седоне</button>
         </section>
 
@@ -215,9 +215,9 @@
       </footer>
     </div>
 
-    <div class="modal-container" id="modal">
+    <div class="modal-container">
       <div class="modal-window">
-        <button class="modal-window__button-close" id="closeModalBtn" type="button">
+        <button class="modal-window__button-close" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <h2 class="modal-window__title">
@@ -239,7 +239,7 @@
           <div class="modal-form__field-wrapper modal-form__field-wrapper--bottom-left">
             <label class="modal-form__label" for="count-adult">Взрослые:</label>
             <div class="modal-form__field-group">
-              <button class="modal-form__button-count modal-form__button-count--dec" type="button"><span
+              <button class="modal-form__button-count" type="button"><span
                   class="visually-hidden">Уменьшить количество</span>
                 <svg class="modal-form__button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -248,7 +248,7 @@
               </button>
               <input class="modal-form__input modal-form__input--count" id="count-adult" type="number"
                 name="count-adult" value="2">
-              <button class="modal-form__button-count modal-form__button-count--inc" type="button"><span
+              <button class="modal-form__button-count" type="button"><span
                   class="visually-hidden">Увеличить количество</span>
                 <svg class="modal-form__button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +286,7 @@
               </button>
             </div>
           </div>
-          <button class="modal-form__button button button--bg-blue">Найти</button>
+          <button class="modal-form__button button button--bg-blue" type="submit">Найти</button>
         </form>
       </div>
     </div>

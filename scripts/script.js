@@ -1,6 +1,6 @@
-const openBtn = document.getElementById('openModalBtn');
-const modal = document.getElementById('modal');
-const closeBtn = document.getElementById('closeModalBtn');
+const openBtn = document.querySelector(".search__button-modal");
+const modal = document.querySelector(".modal-container");
+const closeBtn = document.querySelector(".modal-window__button-close");
 
 openBtn.addEventListener('click', () => {
   modal.style.display = 'flex';
