@@ -1047,7 +1047,6 @@ img {
   grid-column: 1 / -1;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .modal-form__field-wrapper--bottom-left {
@@ -1112,7 +1111,6 @@ img {
   background-color: #F2F2F2;
 }
 
-
 .modal-form__message {
   position: absolute;
   display: block;
@@ -1165,8 +1163,8 @@ img {
   justify-content: center;
   height: 143px;
   background-color: #333333;
-  top: 40px;
-  left: -105px;
+  top: 43px;
+  left: -114px;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
