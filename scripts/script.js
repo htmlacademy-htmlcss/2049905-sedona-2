@@ -10,7 +10,6 @@ closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-// Закрытие при клике вне модального окна
 window.addEventListener('click', (event) => {
   if (event.target === modal) {
     modal.style.display = 'none';

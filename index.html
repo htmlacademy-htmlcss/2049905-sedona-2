@@ -110,15 +110,15 @@
           <ul class="services__list">
             <li class="services__item">
               <h3 class="services__title services__title--house">Жильё</h3>
-              <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="services__description">Рекомендуем пожить в&nbsp;настоящем мотеле, <br>всё как в кино!</p>
             </li>
             <li class="services__item">
               <h3 class="services__title services__title--food">Еда</h3>
-              <p class="services__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="services__description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services__item">
               <h3 class="services__title services__title--gift">Сувениры</h3>
-              <p class="services__description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="services__description">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -126,17 +126,19 @@
         <section class="search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы в городе Седона</h2>
           <p class="search__section-head section-head">Заинтересовались?</p>
-          <p class="search__section-description section-description">Укажите предполагаемые даты поездки, и мы покажем
+          <p class="search__section-description section-description">Укажите предполагаемые даты поездки,<br>и мы
+            покажем
             вам лучшие предложения гостиниц
             в Седоне</p>
-          <button class="search__button-modal button button--bg-brown" type="button" id="openModalBtn">Поиск гостиницы в Седоне</button>
+          <button class="search__button-modal button button--bg-brown" type="button" id="openModalBtn">Поиск гостиницы в
+            Седоне</button>
         </section>
 
         <section class="subscription subscription--with-background" data-test="subscribe">
           <h2 class="subscription__section-head section-head section-head--color-white">Подпишитесь на рассылку</h2>
           <p class="subscription__section-description section-description section-description--color-white">Только
             полезная
-            информация и никакого спама, честное
+            информация и никакого спама,<br>честное
             бойскаутское!</p>
           <form class="subscription__subscribe-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-form-email">Введите ваш email:</label>
@@ -216,7 +218,7 @@
     <div class="modal-container" id="modal">
       <div class="modal-window">
         <button class="modal-window__button-close" id="closeModalBtn" type="button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <h2 class="modal-window__title">
           Поиск гостиницы в Седоне
@@ -239,7 +241,8 @@
             <div class="modal-form__field-group">
               <button class="modal-form__button-count modal-form__button-count--dec" type="button"><span
                   class="visually-hidden">Уменьшить количество</span>
-                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="modal-form__button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                 </svg>
               </button>
@@ -247,7 +250,8 @@
                 name="count-adult" value="2">
               <button class="modal-form__button-count modal-form__button-count--inc" type="button"><span
                   class="visually-hidden">Увеличить количество</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="modal-form__button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
                 </svg>
               </button>
@@ -255,13 +259,19 @@
           </div>
           <div class="modal-form__field-wrapper modal-form__field-wrapper--bottom-right">
             <label class="modal-form__label" for="count-children">Дети:</label>
-<button class="modal-form__popover-button" type="button"></button>
-<p class="modal-form__popover-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-
+            <div class="modal-form__tooltip">
+              <button class="modal-form__tooltip-button" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+              <span class="modal-form__tooltip-info" role="tooltip">Укажите количество детей, которые будут с вами,
+                возраст которых от 6 до
+                18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </div>
             <div class="modal-form__field-group">
               <button class="modal-form__button-count modal-form__button-count--dec" type="button"><span
                   class="visually-hidden">Уменьшить количество</span>
-                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="modal-form__button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                 </svg>
               </button>
@@ -269,7 +279,8 @@
                 name="count-children" value="2">
               <button class="modal-form__button-count modal-form__button-count--inc" type="button"><span
                   class="visually-hidden">Увеличить количество</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="modal-form__button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
                 </svg>
               </button>
