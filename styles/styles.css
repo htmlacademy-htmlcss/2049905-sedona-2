@@ -1283,10 +1283,18 @@ img {
   position: relative;
   margin: auto;
   padding: 64px 70px;
+  padding-right: 30px;
   background-color: #ffffff;
+  height: 576px;
   width: 717px;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-window__wrapper {
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 40px;
 }
 
 .modal-window__header {
@@ -1317,6 +1325,7 @@ img {
   border-radius: 50%;
   background-color: #F2F2F2;
   cursor: pointer;
+  z-index: 10;
 }
 
 .modal-window__button-close-icon {
