@@ -33,6 +33,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -44,6 +45,7 @@ img {
   padding: 0;
   border: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -843,6 +845,7 @@ img {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  -moz-appearance: textfield;
 }
 
 .range__input:hover {
@@ -856,6 +859,7 @@ img {
 
 .range__input::-webkit-outer-spin-button,
 .range__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -971,6 +975,8 @@ img {
 
 .catalog__sort-select {
   position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 292px;
   height: 49px;
@@ -982,6 +988,7 @@ img {
   background-image: url(../images/svg/sort-open-close.svg);
   background-repeat: no-repeat;
   background-position: 258px center;
+  background-color: #FFFFFF;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -1376,6 +1383,7 @@ img {
   background-color: #F2F2F2;
   padding: 0 20px;
   outline: none;
+  -moz-appearance: textfield;
   z-index: 1;
 }
 
@@ -1411,6 +1419,7 @@ img {
 
 .modal-form__input::-webkit-outer-spin-button,
 .modal-form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
 }
 
