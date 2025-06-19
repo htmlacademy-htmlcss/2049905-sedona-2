@@ -1594,6 +1594,10 @@ img {
   opacity: 0.6;
 }
 
+.modal-form__tooltip-button:focus + .modal-form__tooltip-info {
+  display: flex;
+}
+
 .modal-form__tooltip-button:hover + .modal-form__tooltip-info {
   display: flex;
 }
