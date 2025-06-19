@@ -239,13 +239,13 @@
             <div class="modal-form__field-wrapper">
               <label class="modal-form__label" for="date-in">Дата заезда:</label>
               <input class="modal-form__input modal-form__input--date" id="date-in" type="text" value="27 апреля 2020"
-                name="date-in" placeholder="Укажите дату">
+                name="date-in" placeholder="Укажите дату" required>
               <p class="modal-form__message modal-form__message--warning">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-form__field-wrapper">
               <label class="modal-form__label" for="date-out">Дата выезда:</label>
               <input class="modal-form__input modal-form__input--date" id="date-out" type="text" value="1 сентября 2023"
-                name="date-out" placeholder="Укажите дату">
+                name="date-out" placeholder="Укажите дату" required>
               <p class="modal-form__message modal-form__message--notice">На эти даты есть свободные номера. Пока есть.
               </p>
             </div>
@@ -261,7 +261,7 @@
                   </svg>
                 </button>
                 <input class="modal-form__input modal-form__input--count" id="count-adult" type="number"
-                  name="count-adult" value="2">
+                  name="count-adult" value="2" required>
                 <button class="modal-form__button-count modal-form__button-count--inc" type="button"><span
                     class="visually-hidden">Увеличить
                     количество</span>
