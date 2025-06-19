@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Алена Наддачина](https://up.htmlacademy.ru/htmlcss-individual/2/user/2049905).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт: [Проект Седона](https://naddachina-alena.github.io/2049905-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
