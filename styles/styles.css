@@ -156,12 +156,24 @@ img {
   fill: #756157;
 }
 
+.user-menu__link:hover .user-menu__count-favorite{
+  opacity: 0.8;
+}
+
 .user-menu__link:focus .user-menu__link-icon{
   fill: #756157;
 }
 
+.user-menu__link:focus .user-menu__count-favorite{
+  opacity: 0.8;
+}
+
 .user-menu__link:active .user-menu__link-icon{
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.user-menu__link:active .user-menu__count-favorite{
+  opacity: 0.3;
 }
 
 .user-menu__link-icon {
@@ -333,7 +345,7 @@ img {
   text-align: center;
   background: url(../images/background-hero.jpg) no-repeat;
   background-size: cover;
-  background-color: rgba(13, 179, 235, 20%);
+  background-color: #407AA6;
 }
 
 .hero::after {
@@ -559,7 +571,8 @@ img {
 }
 
 .subscription--with-background {
-  background: url("../images/background-subscribe.jpg") no-repeat, #82B3D3;
+  background: url("../images/background-subscribe.jpg") no-repeat;
+  background-color: #407AA6;
   background-size: cover;
 }
 
@@ -639,7 +652,8 @@ img {
 
 .catalog-filters {
   padding: 35px 70px 70px;
-  background: url("../images/background-form.jpg") no-repeat, #82B3D3;
+  background: url("../images/background-form.jpg") no-repeat;
+  background-color: #6E5550;
   background-size: cover;
   color: #ffffff;
 }
@@ -764,6 +778,16 @@ img {
   opacity: 0.3;
 }
 
+.search-form__label:has(> .search-form__checkbox:disabled) {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.search-form__label:has(> .search-form__radio:disabled) {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 .search-form__label:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -855,6 +879,11 @@ img {
 .range__input:focus {
   outline: 2px solid #83B3D3;
   background-color: #E6E6E6;
+}
+
+.range__input:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .range__input::-webkit-outer-spin-button,
@@ -963,7 +992,7 @@ img {
   margin-bottom: 40px;
 }
 
-.catalog_result {
+.catalog__result {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1346,6 +1375,15 @@ img {
   opacity: 0.3;
 }
 
+.modal-window__button-close:disabled {
+  background-color: #E6E6E6;
+  pointer-events: none;
+}
+
+.modal-window__button-close:disabled .modal-window__button-close-icon {
+   opacity: 0.3;
+}
+
 .modal-form {
   display: grid;
   grid-template-columns: 247px 1fr;
@@ -1401,6 +1439,12 @@ img {
   outline: 3px solid #83B3D3;
 }
 
+.modal-form__input:disabled {
+  background-color: #E5E5E5;
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
 .modal-form__input--date {
   background-image: url("../images/svg/calendar.svg");
   background-repeat: no-repeat;
@@ -1453,6 +1497,11 @@ img {
 .modal-form__button-count:active .modal-form__button-count-icon {
   outline: none;
   fill: rgba(117, 97, 87, 0.30);
+}
+
+.modal-form__button-count:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .modal-form__button-count--dec {
