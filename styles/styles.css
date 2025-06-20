@@ -140,8 +140,11 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 300px;
+  min-width: 150px;
+  max-width: 250px;
   list-style: none;
+  padding: 0;
+  padding-left: 62px;
 }
 
 .user-menu__link {
