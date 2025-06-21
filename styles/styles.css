@@ -653,7 +653,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* caTaLOG */
+/* catalog */
 
 .catalog-filters {
   padding: 35px 70px 70px;
@@ -741,21 +741,28 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-right: 70px;
+  gap: 20px;
   row-gap: 50px;
 }
 
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  min-width: 200px;
+  max-width: 235px;
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
 }
 
 .search-form__fieldset:nth-child(2) {
   margin-right: auto;
+}
+
+.search-form__fieldset--fix-width {
+  min-width: 288px;
+  max-width: 288px;
 }
 
 .search-form__legend {
